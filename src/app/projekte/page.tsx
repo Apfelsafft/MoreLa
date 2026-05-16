@@ -5,8 +5,8 @@ import { User, Calendar, Tag } from "lucide-react";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import { StatusBadge, PriorityBadge } from "@/components/StatusBadge";
-import type { Project, OrgData, ProjectsData } from "@/lib/data";
-import { formatCurrency } from "@/lib/data";
+import type { Project, OrgData, ProjectsData } from "@/lib/types";
+import { formatCurrency } from "@/lib/types";
 
 type FilterStatus = "all" | "active" | "planning" | "completed" | "on-hold";
 

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { TrendingUp, TrendingDown, AlertCircle } from "lucide-react";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
-import type { FinancesData } from "@/lib/data";
+import type { FinancesData } from "@/lib/types";
 
 function formatEur(n: number): string {
   if (n >= 1000000) return `${(n / 1000000).toFixed(2).replace(".", ",")} Mio. €`;

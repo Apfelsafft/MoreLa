@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Search, Mail, Phone, Users } from "lucide-react";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
-import type { OrgData, Employee, Department } from "@/lib/data";
+import type { OrgData, Employee, Department } from "@/lib/types";
 
 export default function OrgPage() {
   const [org, setOrg] = useState<OrgData | null>(null);
