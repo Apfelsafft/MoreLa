@@ -1,0 +1,54 @@
+{
+  "year": 2025,
+  "updated": "2025-05-01",
+  "total_budget": 4200000,
+  "total_spent": 1680000,
+  "total_forecast": 4050000,
+  "departments": [
+    {
+      "id": "budget-infra",
+      "name": "IT Infrastruktur",
+      "budget": 1680000,
+      "spent": 735000,
+      "forecast": 1620000,
+      "headcount": 4
+    },
+    {
+      "id": "budget-itsm",
+      "name": "IT Service Management",
+      "budget": 1260000,
+      "spent": 504000,
+      "forecast": 1218000,
+      "headcount": 5
+    },
+    {
+      "id": "budget-dev",
+      "name": "IT Entwicklung",
+      "budget": 1260000,
+      "spent": 441000,
+      "forecast": 1212000,
+      "headcount": 5
+    }
+  ],
+  "categories": [
+    { "name": "Personal", "budget": 2100000, "spent": 840000 },
+    { "name": "Hardware", "budget": 630000, "spent": 201600 },
+    { "name": "Software & Lizenzen", "budget": 504000, "spent": 302400 },
+    { "name": "Cloud Services", "budget": 420000, "spent": 218400 },
+    { "name": "Externe Dienstleister", "budget": 546000, "spent": 117600 }
+  ],
+  "monthly_spend": [
+    { "month": "Jan", "actual": 142000, "forecast": 142000 },
+    { "month": "Feb", "actual": 138000, "forecast": 138000 },
+    { "month": "Mar", "actual": 155000, "forecast": 155000 },
+    { "month": "Apr", "actual": 161000, "forecast": 161000 },
+    { "month": "Mai", "actual": null, "forecast": 168000 },
+    { "month": "Jun", "actual": null, "forecast": 172000 },
+    { "month": "Jul", "actual": null, "forecast": 165000 },
+    { "month": "Aug", "actual": null, "forecast": 158000 },
+    { "month": "Sep", "actual": null, "forecast": 175000 },
+    { "month": "Okt", "actual": null, "forecast": 182000 },
+    { "month": "Nov", "actual": null, "forecast": 188000 },
+    { "month": "Dez", "actual": null, "forecast": 195000 }
+  ]
+}

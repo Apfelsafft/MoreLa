@@ -1,0 +1,194 @@
+{
+  "company": "TechCorp AG",
+  "updated": "2025-05-01",
+  "departments": [
+    {
+      "id": "dept-001",
+      "name": "IT Infrastruktur",
+      "head_id": "emp-002",
+      "color": "#1e40af",
+      "budget_id": "budget-infra"
+    },
+    {
+      "id": "dept-002",
+      "name": "IT Service Management",
+      "head_id": "emp-006",
+      "color": "#0891b2",
+      "budget_id": "budget-itsm"
+    },
+    {
+      "id": "dept-003",
+      "name": "IT Entwicklung",
+      "head_id": "emp-011",
+      "color": "#059669",
+      "budget_id": "budget-dev"
+    }
+  ],
+  "employees": [
+    {
+      "id": "emp-001",
+      "name": "Dr. Markus Bauer",
+      "role": "CIO",
+      "department_id": null,
+      "email": "m.bauer@techcorp.ag",
+      "phone": "+49 89 1234-1000",
+      "reports_to": null,
+      "hire_date": "2019-03-01",
+      "avatar_initials": "MB"
+    },
+    {
+      "id": "emp-002",
+      "name": "Sandra Hoffmann",
+      "role": "Leiterin IT Infrastruktur",
+      "department_id": "dept-001",
+      "email": "s.hoffmann@techcorp.ag",
+      "phone": "+49 89 1234-1100",
+      "reports_to": "emp-001",
+      "hire_date": "2020-06-15",
+      "avatar_initials": "SH"
+    },
+    {
+      "id": "emp-003",
+      "name": "Jonas Müller",
+      "role": "Senior Netzwerkadministrator",
+      "department_id": "dept-001",
+      "email": "j.mueller@techcorp.ag",
+      "phone": "+49 89 1234-1101",
+      "reports_to": "emp-002",
+      "hire_date": "2021-01-10",
+      "avatar_initials": "JM"
+    },
+    {
+      "id": "emp-004",
+      "name": "Lena Richter",
+      "role": "Systemadministratorin",
+      "department_id": "dept-001",
+      "email": "l.richter@techcorp.ag",
+      "phone": "+49 89 1234-1102",
+      "reports_to": "emp-002",
+      "hire_date": "2021-09-01",
+      "avatar_initials": "LR"
+    },
+    {
+      "id": "emp-005",
+      "name": "Tobias Klein",
+      "role": "Cloud Engineer",
+      "department_id": "dept-001",
+      "email": "t.klein@techcorp.ag",
+      "phone": "+49 89 1234-1103",
+      "reports_to": "emp-002",
+      "hire_date": "2022-04-01",
+      "avatar_initials": "TK"
+    },
+    {
+      "id": "emp-006",
+      "name": "Michael Schneider",
+      "role": "Leiter IT Service Management",
+      "department_id": "dept-002",
+      "email": "m.schneider@techcorp.ag",
+      "phone": "+49 89 1234-1200",
+      "reports_to": "emp-001",
+      "hire_date": "2019-11-01",
+      "avatar_initials": "MS"
+    },
+    {
+      "id": "emp-007",
+      "name": "Anna Weber",
+      "role": "ITSM Consultant",
+      "department_id": "dept-002",
+      "email": "a.weber@techcorp.ag",
+      "phone": "+49 89 1234-1201",
+      "reports_to": "emp-006",
+      "hire_date": "2022-02-14",
+      "avatar_initials": "AW"
+    },
+    {
+      "id": "emp-008",
+      "name": "Felix Wagner",
+      "role": "IT Support Specialist",
+      "department_id": "dept-002",
+      "email": "f.wagner@techcorp.ag",
+      "phone": "+49 89 1234-1202",
+      "reports_to": "emp-006",
+      "hire_date": "2023-05-01",
+      "avatar_initials": "FW"
+    },
+    {
+      "id": "emp-009",
+      "name": "Sabine Fischer",
+      "role": "Incident Manager",
+      "department_id": "dept-002",
+      "email": "s.fischer@techcorp.ag",
+      "phone": "+49 89 1234-1203",
+      "reports_to": "emp-006",
+      "hire_date": "2021-07-15",
+      "avatar_initials": "SF"
+    },
+    {
+      "id": "emp-010",
+      "name": "Christian Braun",
+      "role": "Change Manager",
+      "department_id": "dept-002",
+      "email": "c.braun@techcorp.ag",
+      "phone": "+49 89 1234-1204",
+      "reports_to": "emp-006",
+      "hire_date": "2020-09-01",
+      "avatar_initials": "CB"
+    },
+    {
+      "id": "emp-011",
+      "name": "Dr. Julia Krause",
+      "role": "Leiterin IT Entwicklung",
+      "department_id": "dept-003",
+      "email": "j.krause@techcorp.ag",
+      "phone": "+49 89 1234-1300",
+      "reports_to": "emp-001",
+      "hire_date": "2020-03-01",
+      "avatar_initials": "JK"
+    },
+    {
+      "id": "emp-012",
+      "name": "Peter Lange",
+      "role": "Senior Software Engineer",
+      "department_id": "dept-003",
+      "email": "p.lange@techcorp.ag",
+      "phone": "+49 89 1234-1301",
+      "reports_to": "emp-011",
+      "hire_date": "2020-08-01",
+      "avatar_initials": "PL"
+    },
+    {
+      "id": "emp-013",
+      "name": "Nina Schmidt",
+      "role": "Frontend Entwicklerin",
+      "department_id": "dept-003",
+      "email": "n.schmidt@techcorp.ag",
+      "phone": "+49 89 1234-1302",
+      "reports_to": "emp-011",
+      "hire_date": "2022-10-01",
+      "avatar_initials": "NS"
+    },
+    {
+      "id": "emp-014",
+      "name": "David Keller",
+      "role": "DevOps Engineer",
+      "department_id": "dept-003",
+      "email": "d.keller@techcorp.ag",
+      "phone": "+49 89 1234-1303",
+      "reports_to": "emp-011",
+      "hire_date": "2021-11-15",
+      "avatar_initials": "DK"
+    },
+    {
+      "id": "emp-015",
+      "name": "Maria Wolf",
+      "role": "IT Security Analystin",
+      "department_id": "dept-003",
+      "email": "m.wolf@techcorp.ag",
+      "phone": "+49 89 1234-1304",
+      "reports_to": "emp-011",
+      "hire_date": "2023-01-15",
+      "avatar_initials": "MW"
+    }
+  ]
+}
