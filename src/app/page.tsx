@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Users, FolderKanban, BarChart3, TrendingUp, ArrowRight, Building2 } from "lucide-react";
+import { Users, FolderKanban, BarChart3, ArrowRight, MapPin } from "lucide-react";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import { getOrgData, getProjectsData, getFinancesData, formatCurrency } from "@/lib/data";
@@ -14,8 +14,8 @@ export default async function DashboardPage() {
   const completedProjects = projectsData.projects.filter((p) => p.status === "completed").length;
   const onHoldProjects = projectsData.projects.filter((p) => p.status === "on-hold").length;
 
-  const employeeCount = org.employees.filter((e) => e.department_id !== null).length;
   const totalEmployees = org.employees.length;
+  const totalSites = org.sites.length;
 
   const budgetUsedPercent = Math.round((finances.total_spent / finances.total_budget) * 100);
 
@@ -45,9 +45,9 @@ export default async function DashboardPage() {
       textColor: "text-purple-600",
     },
     {
-      label: "Abteilungen",
-      value: String(org.departments.length),
-      icon: Building2,
+      label: "Standorte",
+      value: String(totalSites),
+      icon: MapPin,
       color: "bg-orange-600",
       lightColor: "bg-orange-50",
       textColor: "text-orange-600",
@@ -58,7 +58,7 @@ export default async function DashboardPage() {
     {
       href: "/org",
       label: "Organigramm",
-      description: "Mitarbeiter und Abteilungsstruktur",
+      description: "Globale Standorte und Matrix-Teams",
       icon: Users,
       color: "text-blue-600",
       bg: "bg-blue-50",

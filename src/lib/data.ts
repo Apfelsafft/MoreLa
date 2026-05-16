@@ -3,6 +3,12 @@ import { join } from "path";
 export type {
   Employee,
   Department,
+  SiteEmployee,
+  SiteTeam,
+  Site,
+  GlobalTeam,
+  PracticeArea,
+  FlatEmployee,
   OrgData,
   Project,
   ProjectsData,
@@ -28,4 +34,3 @@ export function getFinancesData(): FinancesData {
   const raw = readFileSync(join(process.cwd(), "data/finances.json"), "utf8");
   return JSON.parse(raw) as FinancesData;
 }
-

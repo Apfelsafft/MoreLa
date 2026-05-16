@@ -1,5 +1,5 @@
 {
-  "updated": "2025-05-01",
+  "updated": "2026-05-16",
   "projects": [
     {
       "id": "proj-001",
@@ -11,8 +11,8 @@
       "spent": 412000,
       "start_date": "2025-01-15",
       "end_date": "2025-12-31",
-      "project_lead_id": "emp-005",
-      "department_id": "dept-001",
+      "project_lead_id": "emp-muc-005",
+      "department_id": "pa-infra",
       "progress": 48,
       "tags": ["Cloud", "Azure", "Migration", "Infrastruktur"]
     },
@@ -26,8 +26,8 @@
       "spent": 145000,
       "start_date": "2025-02-01",
       "end_date": "2025-09-30",
-      "project_lead_id": "emp-015",
-      "department_id": "dept-003",
+      "project_lead_id": "emp-nyc-006",
+      "department_id": "pa-sec",
       "progress": 35,
       "tags": ["Security", "Zero Trust", "MFA", "Compliance"]
     },
@@ -41,8 +41,8 @@
       "spent": 12000,
       "start_date": "2025-06-01",
       "end_date": "2025-10-31",
-      "project_lead_id": "emp-007",
-      "department_id": "dept-002",
+      "project_lead_id": "emp-muc-007",
+      "department_id": "pa-itsm",
       "progress": 5,
       "tags": ["ServiceNow", "ITSM", "Upgrade"]
     },
@@ -56,8 +56,8 @@
       "spent": 198000,
       "start_date": "2025-01-01",
       "end_date": "2025-08-31",
-      "project_lead_id": "emp-003",
-      "department_id": "dept-001",
+      "project_lead_id": "emp-muc-002",
+      "department_id": "pa-infra",
       "progress": 62,
       "tags": ["Netzwerk", "SD-WAN", "WLAN6E", "Infrastruktur"]
     },
@@ -71,8 +71,8 @@
       "spent": 91000,
       "start_date": "2024-09-01",
       "end_date": "2025-02-28",
-      "project_lead_id": "emp-008",
-      "department_id": "dept-002",
+      "project_lead_id": "emp-muc-008",
+      "department_id": "pa-itsm",
       "progress": 100,
       "tags": ["Asset Management", "ITAM", "Inventory"]
     },
@@ -86,8 +86,8 @@
       "spent": 78000,
       "start_date": "2025-03-01",
       "end_date": "2025-11-30",
-      "project_lead_id": "emp-004",
-      "department_id": "dept-001",
+      "project_lead_id": "emp-muc-003",
+      "department_id": "pa-infra",
       "progress": 28,
       "tags": ["Backup", "DR", "Resilience", "Compliance"]
     },
@@ -101,8 +101,8 @@
       "spent": 8000,
       "start_date": "2025-07-01",
       "end_date": "2025-12-31",
-      "project_lead_id": "emp-013",
-      "department_id": "dept-003",
+      "project_lead_id": "emp-lon-011",
+      "department_id": "pa-dev",
       "progress": 8,
       "tags": ["Self-Service", "Portal", "UX", "Entwicklung"]
     },
@@ -116,8 +116,8 @@
       "spent": 45000,
       "start_date": "2025-04-01",
       "end_date": "2026-03-31",
-      "project_lead_id": "emp-012",
-      "department_id": "dept-003",
+      "project_lead_id": "emp-lon-010",
+      "department_id": "pa-dev",
       "progress": 12,
       "tags": ["SAP", "Integration", "Middleware", "ERP"]
     },
@@ -131,8 +131,8 @@
       "spent": 52000,
       "start_date": "2025-02-15",
       "end_date": "2025-07-31",
-      "project_lead_id": "emp-009",
-      "department_id": "dept-002",
+      "project_lead_id": "emp-sin-009",
+      "department_id": "pa-itsm",
       "progress": 55,
       "tags": ["MDM", "Intune", "Mobile", "Endpoints"]
     },
@@ -146,8 +146,8 @@
       "spent": 82000,
       "start_date": "2024-10-01",
       "end_date": "2025-03-31",
-      "project_lead_id": "emp-010",
-      "department_id": "dept-002",
+      "project_lead_id": "emp-nyc-010",
+      "department_id": "pa-sec",
       "progress": 100,
       "tags": ["Compliance", "ISO27001", "Audit", "Security"]
     }

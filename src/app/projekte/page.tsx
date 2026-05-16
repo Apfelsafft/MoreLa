@@ -41,11 +41,11 @@ export default function ProjektePage() {
   const getLeadName = (leadId: string): string =>
     org?.employees.find((e) => e.id === leadId)?.name ?? "–";
 
-  const getDeptName = (deptId: string): string =>
-    org?.departments.find((d) => d.id === deptId)?.name ?? "–";
+  const getPracticeAreaName = (id: string): string =>
+    org?.practice_areas?.find((p) => p.id === id)?.name ?? "–";
 
-  const getDeptColor = (deptId: string): string =>
-    org?.departments.find((d) => d.id === deptId)?.color ?? "#6b7280";
+  const getPracticeAreaColor = (id: string): string =>
+    org?.practice_areas?.find((p) => p.id === id)?.color ?? "#6b7280";
 
   return (
     <div className="flex h-screen bg-gray-50">
@@ -103,8 +103,8 @@ export default function ProjektePage() {
                   key={project.id}
                   project={project}
                   leadName={getLeadName(project.project_lead_id)}
-                  deptName={getDeptName(project.department_id)}
-                  deptColor={getDeptColor(project.department_id)}
+                  practiceAreaName={getPracticeAreaName(project.department_id)}
+                  practiceAreaColor={getPracticeAreaColor(project.department_id)}
                 />
               ))}
               {filteredProjects.length === 0 && (
@@ -123,23 +123,15 @@ export default function ProjektePage() {
 function ProjectCard({
   project,
   leadName,
-  deptName,
-  deptColor,
+  practiceAreaName,
+  practiceAreaColor,
 }: {
   project: Project;
   leadName: string;
-  deptName: string;
-  deptColor: string;
+  practiceAreaName: string;
+  practiceAreaColor: string;
 }) {
   const budgetPct = Math.round((project.spent / project.budget) * 100);
-
-  const priorityColors: Record<string, string> = {
-    high: "bg-red-50 border-l-red-400",
-    medium: "bg-orange-50 border-l-orange-400",
-    low: "bg-blue-50 border-l-blue-400",
-  };
-
-  const borderColor = priorityColors[project.priority] ?? "";
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-5 flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow">
@@ -222,9 +214,9 @@ function ProjectCard({
         </div>
         <span
           className="text-xs px-2 py-0.5 rounded-full text-white"
-          style={{ backgroundColor: deptColor }}
+          style={{ backgroundColor: practiceAreaColor }}
         >
-          {deptName.replace("IT ", "")}
+          {practiceAreaName.replace("IT ", "")}
         </span>
       </div>
     </div>

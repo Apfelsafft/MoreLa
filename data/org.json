@@ -1,194 +1,1136 @@
 {
   "company": "TechCorp AG",
-  "updated": "2025-05-01",
-  "departments": [
+  "updated": "2026-05-16",
+  "itot_head": {
+    "id": "emp-head-001",
+    "name": "Dr. Markus Bauer",
+    "role": "ITOT Head",
+    "email": "m.bauer@techcorp.ag",
+    "phone": "+49 89 1234-1000",
+    "avatar_initials": "MB",
+    "location": "Munich HQ"
+  },
+  "practice_areas": [
+    { "id": "pa-infra", "name": "IT Infrastruktur", "color": "#1e40af" },
+    { "id": "pa-itsm", "name": "IT Service Management", "color": "#0891b2" },
+    { "id": "pa-dev", "name": "IT Entwicklung", "color": "#059669" },
+    { "id": "pa-sec", "name": "IT Security", "color": "#dc2626" }
+  ],
+  "sites": [
     {
-      "id": "dept-001",
-      "name": "IT Infrastruktur",
-      "head_id": "emp-002",
-      "color": "#1e40af",
-      "budget_id": "budget-infra"
+      "id": "site-muc",
+      "name": "Munich HQ",
+      "city": "Munich",
+      "country": "Germany",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "timezone": "CET (UTC+1)",
+      "lat": 48.1351,
+      "lng": 11.5820,
+      "sitehead": {
+        "id": "emp-muc-001",
+        "name": "Sandra Hoffmann",
+        "role": "Site Lead Munich / Leiterin IT Infrastruktur",
+        "email": "s.hoffmann@techcorp.ag",
+        "phone": "+49 89 1234-1100",
+        "avatar_initials": "SH"
+      },
+      "staff_positions": [
+        {
+          "id": "emp-muc-stab-001",
+          "name": "Dr. Julia Krause",
+          "role": "Strategische IT-Planung",
+          "email": "j.krause@techcorp.ag",
+          "phone": "+49 89 1234-1010",
+          "avatar_initials": "JK"
+        },
+        {
+          "id": "emp-muc-stab-002",
+          "name": "Christian Braun",
+          "role": "IT Governance & Compliance",
+          "email": "c.braun@techcorp.ag",
+          "phone": "+49 89 1234-1011",
+          "avatar_initials": "CB"
+        }
+      ],
+      "teams": [
+        {
+          "id": "team-muc-001",
+          "name": "IT Infrastructure",
+          "teamlead": {
+            "id": "emp-muc-002",
+            "name": "Jonas Müller",
+            "role": "Senior Netzwerkadministrator",
+            "email": "j.mueller@techcorp.ag",
+            "phone": "+49 89 1234-1101",
+            "avatar_initials": "JM"
+          },
+          "members": [
+            {
+              "id": "emp-muc-003",
+              "name": "Lena Richter",
+              "role": "Systemadministratorin",
+              "email": "l.richter@techcorp.ag",
+              "phone": "+49 89 1234-1102",
+              "avatar_initials": "LR"
+            },
+            {
+              "id": "emp-muc-004",
+              "name": "Tobias Klein",
+              "role": "Cloud Engineer",
+              "email": "t.klein@techcorp.ag",
+              "phone": "+49 89 1234-1103",
+              "avatar_initials": "TK"
+            },
+            {
+              "id": "emp-muc-005",
+              "name": "Peter Lange",
+              "role": "Cloud Architect",
+              "email": "p.lange@techcorp.ag",
+              "phone": "+49 89 1234-1104",
+              "avatar_initials": "PL"
+            }
+          ]
+        },
+        {
+          "id": "team-muc-002",
+          "name": "IT Service Management",
+          "teamlead": {
+            "id": "emp-muc-006",
+            "name": "Michael Schneider",
+            "role": "Leiter IT Service Management",
+            "email": "m.schneider@techcorp.ag",
+            "phone": "+49 89 1234-1200",
+            "avatar_initials": "MS"
+          },
+          "members": [
+            {
+              "id": "emp-muc-007",
+              "name": "Anna Weber",
+              "role": "ITSM Consultant",
+              "email": "a.weber@techcorp.ag",
+              "phone": "+49 89 1234-1201",
+              "avatar_initials": "AW"
+            },
+            {
+              "id": "emp-muc-008",
+              "name": "Sabine Fischer",
+              "role": "Incident Manager",
+              "email": "s.fischer@techcorp.ag",
+              "phone": "+49 89 1234-1202",
+              "avatar_initials": "SF"
+            },
+            {
+              "id": "emp-muc-009",
+              "name": "Felix Wagner",
+              "role": "IT Support Specialist",
+              "email": "f.wagner@techcorp.ag",
+              "phone": "+49 89 1234-1203",
+              "avatar_initials": "FW"
+            }
+          ]
+        },
+        {
+          "id": "team-muc-003",
+          "name": "IT Entwicklung",
+          "teamlead": {
+            "id": "emp-muc-010",
+            "name": "Nina Schmidt",
+            "role": "Lead Software Engineer",
+            "email": "n.schmidt@techcorp.ag",
+            "phone": "+49 89 1234-1300",
+            "avatar_initials": "NS"
+          },
+          "members": [
+            {
+              "id": "emp-muc-011",
+              "name": "David Keller",
+              "role": "DevOps Engineer",
+              "email": "d.keller@techcorp.ag",
+              "phone": "+49 89 1234-1301",
+              "avatar_initials": "DK"
+            },
+            {
+              "id": "emp-muc-012",
+              "name": "Maria Wolf",
+              "role": "Backend Entwicklerin",
+              "email": "m.wolf@techcorp.ag",
+              "phone": "+49 89 1234-1302",
+              "avatar_initials": "MW"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "dept-002",
-      "name": "IT Service Management",
-      "head_id": "emp-006",
-      "color": "#0891b2",
-      "budget_id": "budget-itsm"
+      "id": "site-nyc",
+      "name": "New York",
+      "city": "New York",
+      "country": "USA",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "timezone": "EST (UTC-5)",
+      "lat": 40.7128,
+      "lng": -74.0060,
+      "sitehead": {
+        "id": "emp-nyc-001",
+        "name": "James Carter",
+        "role": "Site Lead New York / VP IT Americas",
+        "email": "j.carter@techcorp.ag",
+        "phone": "+1 212 555-2001",
+        "avatar_initials": "JC"
+      },
+      "staff_positions": [
+        {
+          "id": "emp-nyc-stab-001",
+          "name": "Rachel Greene",
+          "role": "IT Strategy & Transformation",
+          "email": "r.greene@techcorp.ag",
+          "phone": "+1 212 555-2010",
+          "avatar_initials": "RG"
+        }
+      ],
+      "teams": [
+        {
+          "id": "team-nyc-001",
+          "name": "IT Operations Americas",
+          "teamlead": {
+            "id": "emp-nyc-002",
+            "name": "Michael Torres",
+            "role": "Head of IT Operations Americas",
+            "email": "m.torres@techcorp.ag",
+            "phone": "+1 212 555-2100",
+            "avatar_initials": "MT"
+          },
+          "members": [
+            {
+              "id": "emp-nyc-003",
+              "name": "Ashley Johnson",
+              "role": "Systems Engineer",
+              "email": "a.johnson@techcorp.ag",
+              "phone": "+1 212 555-2101",
+              "avatar_initials": "AJ"
+            },
+            {
+              "id": "emp-nyc-004",
+              "name": "Brandon Lee",
+              "role": "Network Engineer",
+              "email": "b.lee@techcorp.ag",
+              "phone": "+1 212 555-2102",
+              "avatar_initials": "BL"
+            },
+            {
+              "id": "emp-nyc-005",
+              "name": "Samantha Davis",
+              "role": "Cloud Solutions Architect",
+              "email": "s.davis@techcorp.ag",
+              "phone": "+1 212 555-2103",
+              "avatar_initials": "SD"
+            }
+          ]
+        },
+        {
+          "id": "team-nyc-002",
+          "name": "Cybersecurity",
+          "teamlead": {
+            "id": "emp-nyc-006",
+            "name": "Kevin Walsh",
+            "role": "Head of Cybersecurity",
+            "email": "k.walsh@techcorp.ag",
+            "phone": "+1 212 555-2200",
+            "avatar_initials": "KW"
+          },
+          "members": [
+            {
+              "id": "emp-nyc-007",
+              "name": "Diana Morgan",
+              "role": "Security Analyst",
+              "email": "d.morgan@techcorp.ag",
+              "phone": "+1 212 555-2201",
+              "avatar_initials": "DM"
+            },
+            {
+              "id": "emp-nyc-008",
+              "name": "Tyler Brooks",
+              "role": "Penetration Tester",
+              "email": "t.brooks@techcorp.ag",
+              "phone": "+1 212 555-2202",
+              "avatar_initials": "TB"
+            },
+            {
+              "id": "emp-nyc-009",
+              "name": "Megan Collins",
+              "role": "SOC Analyst",
+              "email": "m.collins@techcorp.ag",
+              "phone": "+1 212 555-2203",
+              "avatar_initials": "MC"
+            }
+          ]
+        },
+        {
+          "id": "team-nyc-003",
+          "name": "IT Compliance & Audit",
+          "teamlead": {
+            "id": "emp-nyc-010",
+            "name": "Patricia Evans",
+            "role": "IT Compliance Manager",
+            "email": "p.evans@techcorp.ag",
+            "phone": "+1 212 555-2300",
+            "avatar_initials": "PE"
+          },
+          "members": [
+            {
+              "id": "emp-nyc-011",
+              "name": "Robert Kim",
+              "role": "IT Auditor",
+              "email": "r.kim@techcorp.ag",
+              "phone": "+1 212 555-2301",
+              "avatar_initials": "RK"
+            },
+            {
+              "id": "emp-nyc-012",
+              "name": "Laura Chen",
+              "role": "Risk & Compliance Analyst",
+              "email": "l.chen@techcorp.ag",
+              "phone": "+1 212 555-2302",
+              "avatar_initials": "LC"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "dept-003",
-      "name": "IT Entwicklung",
-      "head_id": "emp-011",
-      "color": "#059669",
-      "budget_id": "budget-dev"
+      "id": "site-lon",
+      "name": "London",
+      "city": "London",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "flag": "🇬🇧",
+      "timezone": "GMT (UTC+0)",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "sitehead": {
+        "id": "emp-lon-001",
+        "name": "Victoria Clarke",
+        "role": "Site Lead London / Head of IT EMEA",
+        "email": "v.clarke@techcorp.ag",
+        "phone": "+44 20 7946-3001",
+        "avatar_initials": "VC"
+      },
+      "staff_positions": [],
+      "teams": [
+        {
+          "id": "team-lon-001",
+          "name": "IT Infrastructure EMEA",
+          "teamlead": {
+            "id": "emp-lon-002",
+            "name": "Oliver Bennett",
+            "role": "Head of IT Infrastructure EMEA",
+            "email": "o.bennett@techcorp.ag",
+            "phone": "+44 20 7946-3100",
+            "avatar_initials": "OB"
+          },
+          "members": [
+            {
+              "id": "emp-lon-003",
+              "name": "Charlotte Hughes",
+              "role": "Network Administrator",
+              "email": "c.hughes@techcorp.ag",
+              "phone": "+44 20 7946-3101",
+              "avatar_initials": "CH"
+            },
+            {
+              "id": "emp-lon-004",
+              "name": "Harry Thompson",
+              "role": "Systems Administrator",
+              "email": "h.thompson@techcorp.ag",
+              "phone": "+44 20 7946-3102",
+              "avatar_initials": "HT"
+            }
+          ]
+        },
+        {
+          "id": "team-lon-002",
+          "name": "Service Desk UK",
+          "teamlead": {
+            "id": "emp-lon-005",
+            "name": "Emma Wilson",
+            "role": "Service Desk Manager UK",
+            "email": "e.wilson@techcorp.ag",
+            "phone": "+44 20 7946-3200",
+            "avatar_initials": "EW"
+          },
+          "members": [
+            {
+              "id": "emp-lon-006",
+              "name": "Jack Robinson",
+              "role": "IT Support Analyst",
+              "email": "j.robinson@techcorp.ag",
+              "phone": "+44 20 7946-3201",
+              "avatar_initials": "JR"
+            },
+            {
+              "id": "emp-lon-007",
+              "name": "Sophie Martin",
+              "role": "IT Support Analyst",
+              "email": "s.martin@techcorp.ag",
+              "phone": "+44 20 7946-3202",
+              "avatar_initials": "SM"
+            },
+            {
+              "id": "emp-lon-008",
+              "name": "George Harris",
+              "role": "Senior IT Support Specialist",
+              "email": "g.harris@techcorp.ag",
+              "phone": "+44 20 7946-3203",
+              "avatar_initials": "GH"
+            }
+          ]
+        },
+        {
+          "id": "team-lon-003",
+          "name": "IT Application Management",
+          "teamlead": {
+            "id": "emp-lon-009",
+            "name": "Amelia Scott",
+            "role": "Application Manager",
+            "email": "a.scott@techcorp.ag",
+            "phone": "+44 20 7946-3300",
+            "avatar_initials": "AS"
+          },
+          "members": [
+            {
+              "id": "emp-lon-010",
+              "name": "William Adams",
+              "role": "SAP Consultant",
+              "email": "w.adams@techcorp.ag",
+              "phone": "+44 20 7946-3301",
+              "avatar_initials": "WA"
+            },
+            {
+              "id": "emp-lon-011",
+              "name": "Isla Campbell",
+              "role": "Frontend Developer",
+              "email": "i.campbell@techcorp.ag",
+              "phone": "+44 20 7946-3302",
+              "avatar_initials": "IC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site-sin",
+      "name": "Singapore",
+      "city": "Singapore",
+      "country": "Singapore",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "timezone": "SGT (UTC+8)",
+      "lat": 1.3521,
+      "lng": 103.8198,
+      "sitehead": {
+        "id": "emp-sin-001",
+        "name": "Wei Liang Tan",
+        "role": "Site Lead Singapore / Head of APAC IT",
+        "email": "wl.tan@techcorp.ag",
+        "phone": "+65 6322-4001",
+        "avatar_initials": "WT"
+      },
+      "staff_positions": [
+        {
+          "id": "emp-sin-stab-001",
+          "name": "Priya Nair",
+          "role": "IT Vendor Management APAC",
+          "email": "p.nair@techcorp.ag",
+          "phone": "+65 6322-4010",
+          "avatar_initials": "PN"
+        }
+      ],
+      "teams": [
+        {
+          "id": "team-sin-001",
+          "name": "APAC IT Operations",
+          "teamlead": {
+            "id": "emp-sin-002",
+            "name": "Chen Wei",
+            "role": "Head of APAC IT Operations",
+            "email": "c.wei@techcorp.ag",
+            "phone": "+65 6322-4100",
+            "avatar_initials": "CW"
+          },
+          "members": [
+            {
+              "id": "emp-sin-003",
+              "name": "Aditya Sharma",
+              "role": "Cloud Infrastructure Engineer",
+              "email": "a.sharma@techcorp.ag",
+              "phone": "+65 6322-4101",
+              "avatar_initials": "AS"
+            },
+            {
+              "id": "emp-sin-004",
+              "name": "Li Mei Ong",
+              "role": "Network Engineer",
+              "email": "lm.ong@techcorp.ag",
+              "phone": "+65 6322-4102",
+              "avatar_initials": "LO"
+            },
+            {
+              "id": "emp-sin-005",
+              "name": "Rajesh Kumar",
+              "role": "Systems Administrator",
+              "email": "r.kumar@techcorp.ag",
+              "phone": "+65 6322-4103",
+              "avatar_initials": "RK"
+            }
+          ]
+        },
+        {
+          "id": "team-sin-002",
+          "name": "Service Desk APAC",
+          "teamlead": {
+            "id": "emp-sin-006",
+            "name": "Hui Lin Zhang",
+            "role": "Service Desk Manager APAC",
+            "email": "hl.zhang@techcorp.ag",
+            "phone": "+65 6322-4200",
+            "avatar_initials": "HZ"
+          },
+          "members": [
+            {
+              "id": "emp-sin-007",
+              "name": "Kavya Reddy",
+              "role": "IT Support Analyst",
+              "email": "k.reddy@techcorp.ag",
+              "phone": "+65 6322-4201",
+              "avatar_initials": "KR"
+            },
+            {
+              "id": "emp-sin-008",
+              "name": "Boon Huat Lim",
+              "role": "IT Support Specialist",
+              "email": "bh.lim@techcorp.ag",
+              "phone": "+65 6322-4202",
+              "avatar_initials": "BL"
+            }
+          ]
+        },
+        {
+          "id": "team-sin-003",
+          "name": "MDM & Endpoint Management",
+          "teamlead": {
+            "id": "emp-sin-009",
+            "name": "Farhan Abdullah",
+            "role": "Endpoint Management Lead",
+            "email": "f.abdullah@techcorp.ag",
+            "phone": "+65 6322-4300",
+            "avatar_initials": "FA"
+          },
+          "members": [
+            {
+              "id": "emp-sin-010",
+              "name": "Mei Shan Goh",
+              "role": "MDM Engineer",
+              "email": "ms.goh@techcorp.ag",
+              "phone": "+65 6322-4301",
+              "avatar_initials": "MG"
+            },
+            {
+              "id": "emp-sin-011",
+              "name": "Suresh Pillai",
+              "role": "Mobile Device Engineer",
+              "email": "s.pillai@techcorp.ag",
+              "phone": "+65 6322-4302",
+              "avatar_initials": "SP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site-gru",
+      "name": "São Paulo",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "country_code": "BR",
+      "flag": "🇧🇷",
+      "timezone": "BRT (UTC-3)",
+      "lat": -23.5505,
+      "lng": -46.6333,
+      "sitehead": {
+        "id": "emp-gru-001",
+        "name": "Rafael Oliveira",
+        "role": "Site Lead São Paulo / Head of IT LATAM",
+        "email": "r.oliveira@techcorp.ag",
+        "phone": "+55 11 3456-5001",
+        "avatar_initials": "RO"
+      },
+      "staff_positions": [],
+      "teams": [
+        {
+          "id": "team-gru-001",
+          "name": "IT Infrastructure LATAM",
+          "teamlead": {
+            "id": "emp-gru-002",
+            "name": "Fernanda Costa",
+            "role": "IT Infrastructure Lead LATAM",
+            "email": "f.costa@techcorp.ag",
+            "phone": "+55 11 3456-5100",
+            "avatar_initials": "FC"
+          },
+          "members": [
+            {
+              "id": "emp-gru-003",
+              "name": "Carlos Mendes",
+              "role": "Network Engineer",
+              "email": "c.mendes@techcorp.ag",
+              "phone": "+55 11 3456-5101",
+              "avatar_initials": "CM"
+            },
+            {
+              "id": "emp-gru-004",
+              "name": "Ana Lima",
+              "role": "Systems Administrator",
+              "email": "a.lima@techcorp.ag",
+              "phone": "+55 11 3456-5102",
+              "avatar_initials": "AL"
+            }
+          ]
+        },
+        {
+          "id": "team-gru-002",
+          "name": "Service Desk Brasil",
+          "teamlead": {
+            "id": "emp-gru-005",
+            "name": "Marcos Santos",
+            "role": "Service Desk Manager Brasil",
+            "email": "m.santos@techcorp.ag",
+            "phone": "+55 11 3456-5200",
+            "avatar_initials": "MS"
+          },
+          "members": [
+            {
+              "id": "emp-gru-006",
+              "name": "Juliana Ferreira",
+              "role": "IT Support Analyst",
+              "email": "j.ferreira@techcorp.ag",
+              "phone": "+55 11 3456-5201",
+              "avatar_initials": "JF"
+            },
+            {
+              "id": "emp-gru-007",
+              "name": "Lucas Alves",
+              "role": "IT Support Analyst",
+              "email": "l.alves@techcorp.ag",
+              "phone": "+55 11 3456-5202",
+              "avatar_initials": "LA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site-tyo",
+      "name": "Tokyo",
+      "city": "Tokyo",
+      "country": "Japan",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "timezone": "JST (UTC+9)",
+      "lat": 35.6762,
+      "lng": 139.6503,
+      "sitehead": {
+        "id": "emp-tyo-001",
+        "name": "Kenji Yamamoto",
+        "role": "Site Lead Tokyo / Head of IT Japan",
+        "email": "k.yamamoto@techcorp.ag",
+        "phone": "+81 3 5678-6001",
+        "avatar_initials": "KY"
+      },
+      "staff_positions": [],
+      "teams": [
+        {
+          "id": "team-tyo-001",
+          "name": "IT Operations Japan",
+          "teamlead": {
+            "id": "emp-tyo-002",
+            "name": "Hiroshi Tanaka",
+            "role": "IT Operations Lead Japan",
+            "email": "h.tanaka@techcorp.ag",
+            "phone": "+81 3 5678-6100",
+            "avatar_initials": "HT"
+          },
+          "members": [
+            {
+              "id": "emp-tyo-003",
+              "name": "Yuki Suzuki",
+              "role": "Network Engineer",
+              "email": "y.suzuki@techcorp.ag",
+              "phone": "+81 3 5678-6101",
+              "avatar_initials": "YS"
+            },
+            {
+              "id": "emp-tyo-004",
+              "name": "Akira Watanabe",
+              "role": "Systems Administrator",
+              "email": "a.watanabe@techcorp.ag",
+              "phone": "+81 3 5678-6102",
+              "avatar_initials": "AW"
+            },
+            {
+              "id": "emp-tyo-005",
+              "name": "Naomi Sato",
+              "role": "Cloud Engineer",
+              "email": "n.sato@techcorp.ag",
+              "phone": "+81 3 5678-6103",
+              "avatar_initials": "NS"
+            }
+          ]
+        },
+        {
+          "id": "team-tyo-002",
+          "name": "Service Desk Japan",
+          "teamlead": {
+            "id": "emp-tyo-006",
+            "name": "Takeshi Ito",
+            "role": "Service Desk Manager Japan",
+            "email": "t.ito@techcorp.ag",
+            "phone": "+81 3 5678-6200",
+            "avatar_initials": "TI"
+          },
+          "members": [
+            {
+              "id": "emp-tyo-007",
+              "name": "Mika Hayashi",
+              "role": "IT Support Analyst",
+              "email": "m.hayashi@techcorp.ag",
+              "phone": "+81 3 5678-6201",
+              "avatar_initials": "MH"
+            },
+            {
+              "id": "emp-tyo-008",
+              "name": "Ryo Nakamura",
+              "role": "IT Support Analyst",
+              "email": "r.nakamura@techcorp.ag",
+              "phone": "+81 3 5678-6202",
+              "avatar_initials": "RN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site-dxb",
+      "name": "Dubai",
+      "city": "Dubai",
+      "country": "UAE",
+      "country_code": "AE",
+      "flag": "🇦🇪",
+      "timezone": "GST (UTC+4)",
+      "lat": 25.2048,
+      "lng": 55.2708,
+      "sitehead": {
+        "id": "emp-dxb-001",
+        "name": "Khalid Al-Rashid",
+        "role": "Site Lead Dubai / Head of IT MEA",
+        "email": "k.alrashid@techcorp.ag",
+        "phone": "+971 4 567-7001",
+        "avatar_initials": "KA"
+      },
+      "staff_positions": [],
+      "teams": [
+        {
+          "id": "team-dxb-001",
+          "name": "IT Infrastructure MEA",
+          "teamlead": {
+            "id": "emp-dxb-002",
+            "name": "Ahmed Hassan",
+            "role": "IT Infrastructure Lead MEA",
+            "email": "a.hassan@techcorp.ag",
+            "phone": "+971 4 567-7100",
+            "avatar_initials": "AH"
+          },
+          "members": [
+            {
+              "id": "emp-dxb-003",
+              "name": "Omar Farouq",
+              "role": "Network Administrator",
+              "email": "o.farouq@techcorp.ag",
+              "phone": "+971 4 567-7101",
+              "avatar_initials": "OF"
+            },
+            {
+              "id": "emp-dxb-004",
+              "name": "Fatima Al-Ali",
+              "role": "Systems Engineer",
+              "email": "f.alali@techcorp.ag",
+              "phone": "+971 4 567-7102",
+              "avatar_initials": "FA"
+            }
+          ]
+        },
+        {
+          "id": "team-dxb-002",
+          "name": "Service Desk MEA",
+          "teamlead": {
+            "id": "emp-dxb-005",
+            "name": "Sara Ibrahim",
+            "role": "Service Desk Manager MEA",
+            "email": "s.ibrahim@techcorp.ag",
+            "phone": "+971 4 567-7200",
+            "avatar_initials": "SI"
+          },
+          "members": [
+            {
+              "id": "emp-dxb-006",
+              "name": "Youssef Mansour",
+              "role": "IT Support Analyst",
+              "email": "y.mansour@techcorp.ag",
+              "phone": "+971 4 567-7201",
+              "avatar_initials": "YM"
+            },
+            {
+              "id": "emp-dxb-007",
+              "name": "Nadia Khalil",
+              "role": "IT Support Analyst",
+              "email": "n.khalil@techcorp.ag",
+              "phone": "+971 4 567-7202",
+              "avatar_initials": "NK"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site-syd",
+      "name": "Sydney",
+      "city": "Sydney",
+      "country": "Australia",
+      "country_code": "AU",
+      "flag": "🇦🇺",
+      "timezone": "AEST (UTC+10)",
+      "lat": -33.8688,
+      "lng": 151.2093,
+      "sitehead": {
+        "id": "emp-syd-001",
+        "name": "Sarah Mitchell",
+        "role": "Site Lead Sydney / Head of IT APAC South",
+        "email": "s.mitchell@techcorp.ag",
+        "phone": "+61 2 9876-8001",
+        "avatar_initials": "SM"
+      },
+      "staff_positions": [
+        {
+          "id": "emp-syd-stab-001",
+          "name": "Nathan Cooper",
+          "role": "IT Business Partner APAC South",
+          "email": "n.cooper@techcorp.ag",
+          "phone": "+61 2 9876-8010",
+          "avatar_initials": "NC"
+        }
+      ],
+      "teams": [
+        {
+          "id": "team-syd-001",
+          "name": "IT Infrastructure APAC South",
+          "teamlead": {
+            "id": "emp-syd-002",
+            "name": "Liam O'Brien",
+            "role": "IT Infrastructure Lead APAC South",
+            "email": "l.obrien@techcorp.ag",
+            "phone": "+61 2 9876-8100",
+            "avatar_initials": "LO"
+          },
+          "members": [
+            {
+              "id": "emp-syd-003",
+              "name": "Emily Nguyen",
+              "role": "Cloud Engineer",
+              "email": "e.nguyen@techcorp.ag",
+              "phone": "+61 2 9876-8101",
+              "avatar_initials": "EN"
+            },
+            {
+              "id": "emp-syd-004",
+              "name": "Jake Harrison",
+              "role": "Network Administrator",
+              "email": "j.harrison@techcorp.ag",
+              "phone": "+61 2 9876-8102",
+              "avatar_initials": "JH"
+            }
+          ]
+        },
+        {
+          "id": "team-syd-002",
+          "name": "Service Desk Australia",
+          "teamlead": {
+            "id": "emp-syd-005",
+            "name": "Chloe Anderson",
+            "role": "Service Desk Manager Australia",
+            "email": "c.anderson@techcorp.ag",
+            "phone": "+61 2 9876-8200",
+            "avatar_initials": "CA"
+          },
+          "members": [
+            {
+              "id": "emp-syd-006",
+              "name": "Ryan Murphy",
+              "role": "IT Support Analyst",
+              "email": "r.murphy@techcorp.ag",
+              "phone": "+61 2 9876-8201",
+              "avatar_initials": "RM"
+            },
+            {
+              "id": "emp-syd-007",
+              "name": "Jessica White",
+              "role": "IT Support Analyst",
+              "email": "j.white@techcorp.ag",
+              "phone": "+61 2 9876-8202",
+              "avatar_initials": "JW"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site-jnb",
+      "name": "Johannesburg",
+      "city": "Johannesburg",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "flag": "🇿🇦",
+      "timezone": "SAST (UTC+2)",
+      "lat": -26.2041,
+      "lng": 28.0473,
+      "sitehead": {
+        "id": "emp-jnb-001",
+        "name": "Thabo Mokoena",
+        "role": "Site Lead Johannesburg / Head of IT Africa",
+        "email": "t.mokoena@techcorp.ag",
+        "phone": "+27 11 234-9001",
+        "avatar_initials": "TM"
+      },
+      "staff_positions": [],
+      "teams": [
+        {
+          "id": "team-jnb-001",
+          "name": "IT Operations Africa",
+          "teamlead": {
+            "id": "emp-jnb-002",
+            "name": "Sipho Dlamini",
+            "role": "IT Operations Lead Africa",
+            "email": "s.dlamini@techcorp.ag",
+            "phone": "+27 11 234-9100",
+            "avatar_initials": "SD"
+          },
+          "members": [
+            {
+              "id": "emp-jnb-003",
+              "name": "Nomsa Khumalo",
+              "role": "Network Engineer",
+              "email": "n.khumalo@techcorp.ag",
+              "phone": "+27 11 234-9101",
+              "avatar_initials": "NK"
+            },
+            {
+              "id": "emp-jnb-004",
+              "name": "Andile Nkosi",
+              "role": "Systems Administrator",
+              "email": "a.nkosi@techcorp.ag",
+              "phone": "+27 11 234-9102",
+              "avatar_initials": "AN"
+            }
+          ]
+        },
+        {
+          "id": "team-jnb-002",
+          "name": "Service Desk Africa",
+          "teamlead": {
+            "id": "emp-jnb-005",
+            "name": "Zanele Mthembu",
+            "role": "Service Desk Manager Africa",
+            "email": "z.mthembu@techcorp.ag",
+            "phone": "+27 11 234-9200",
+            "avatar_initials": "ZM"
+          },
+          "members": [
+            {
+              "id": "emp-jnb-006",
+              "name": "Lebogang Sithole",
+              "role": "IT Support Analyst",
+              "email": "l.sithole@techcorp.ag",
+              "phone": "+27 11 234-9201",
+              "avatar_initials": "LS"
+            },
+            {
+              "id": "emp-jnb-007",
+              "name": "Precious Molefe",
+              "role": "IT Support Analyst",
+              "email": "p.molefe@techcorp.ag",
+              "phone": "+27 11 234-9202",
+              "avatar_initials": "PM"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "global_teams": [
+    {
+      "id": "gteam-001",
+      "name": "Global Cybersecurity Task Force",
+      "scope": "global",
+      "region": null,
+      "lead_site_id": "site-nyc",
+      "lead_id": "emp-nyc-006",
+      "member_ids": [
+        "emp-muc-002",
+        "emp-lon-002",
+        "emp-sin-002",
+        "emp-syd-002",
+        "emp-nyc-007",
+        "emp-dxb-002"
+      ]
+    },
+    {
+      "id": "gteam-002",
+      "name": "Cloud & Infrastruktur Steering Group",
+      "scope": "global",
+      "region": null,
+      "lead_site_id": "site-muc",
+      "lead_id": "emp-muc-005",
+      "member_ids": [
+        "emp-nyc-005",
+        "emp-lon-002",
+        "emp-sin-003",
+        "emp-syd-003",
+        "emp-tyo-005",
+        "emp-gru-002"
+      ]
+    },
+    {
+      "id": "gteam-003",
+      "name": "APAC IT Operations Council",
+      "scope": "regional",
+      "region": "APAC",
+      "lead_site_id": "site-sin",
+      "lead_id": "emp-sin-002",
+      "member_ids": [
+        "emp-tyo-002",
+        "emp-syd-002",
+        "emp-sin-006",
+        "emp-tyo-006",
+        "emp-syd-005"
+      ]
+    },
+    {
+      "id": "gteam-004",
+      "name": "Global IT Service Management Forum",
+      "scope": "global",
+      "region": null,
+      "lead_site_id": "site-muc",
+      "lead_id": "emp-muc-006",
+      "member_ids": [
+        "emp-nyc-010",
+        "emp-lon-005",
+        "emp-sin-006",
+        "emp-gru-005",
+        "emp-tyo-006",
+        "emp-dxb-005",
+        "emp-syd-005",
+        "emp-jnb-005"
+      ]
     }
   ],
   "employees": [
-    {
-      "id": "emp-001",
-      "name": "Dr. Markus Bauer",
-      "role": "CIO",
-      "department_id": null,
-      "email": "m.bauer@techcorp.ag",
-      "phone": "+49 89 1234-1000",
-      "reports_to": null,
-      "hire_date": "2019-03-01",
-      "avatar_initials": "MB"
-    },
-    {
-      "id": "emp-002",
-      "name": "Sandra Hoffmann",
-      "role": "Leiterin IT Infrastruktur",
-      "department_id": "dept-001",
-      "email": "s.hoffmann@techcorp.ag",
-      "phone": "+49 89 1234-1100",
-      "reports_to": "emp-001",
-      "hire_date": "2020-06-15",
-      "avatar_initials": "SH"
-    },
-    {
-      "id": "emp-003",
-      "name": "Jonas Müller",
-      "role": "Senior Netzwerkadministrator",
-      "department_id": "dept-001",
-      "email": "j.mueller@techcorp.ag",
-      "phone": "+49 89 1234-1101",
-      "reports_to": "emp-002",
-      "hire_date": "2021-01-10",
-      "avatar_initials": "JM"
-    },
-    {
-      "id": "emp-004",
-      "name": "Lena Richter",
-      "role": "Systemadministratorin",
-      "department_id": "dept-001",
-      "email": "l.richter@techcorp.ag",
-      "phone": "+49 89 1234-1102",
-      "reports_to": "emp-002",
-      "hire_date": "2021-09-01",
-      "avatar_initials": "LR"
-    },
-    {
-      "id": "emp-005",
-      "name": "Tobias Klein",
-      "role": "Cloud Engineer",
-      "department_id": "dept-001",
-      "email": "t.klein@techcorp.ag",
-      "phone": "+49 89 1234-1103",
-      "reports_to": "emp-002",
-      "hire_date": "2022-04-01",
-      "avatar_initials": "TK"
-    },
-    {
-      "id": "emp-006",
-      "name": "Michael Schneider",
-      "role": "Leiter IT Service Management",
-      "department_id": "dept-002",
-      "email": "m.schneider@techcorp.ag",
-      "phone": "+49 89 1234-1200",
-      "reports_to": "emp-001",
-      "hire_date": "2019-11-01",
-      "avatar_initials": "MS"
-    },
-    {
-      "id": "emp-007",
-      "name": "Anna Weber",
-      "role": "ITSM Consultant",
-      "department_id": "dept-002",
-      "email": "a.weber@techcorp.ag",
-      "phone": "+49 89 1234-1201",
-      "reports_to": "emp-006",
-      "hire_date": "2022-02-14",
-      "avatar_initials": "AW"
-    },
-    {
-      "id": "emp-008",
-      "name": "Felix Wagner",
-      "role": "IT Support Specialist",
-      "department_id": "dept-002",
-      "email": "f.wagner@techcorp.ag",
-      "phone": "+49 89 1234-1202",
-      "reports_to": "emp-006",
-      "hire_date": "2023-05-01",
-      "avatar_initials": "FW"
-    },
-    {
-      "id": "emp-009",
-      "name": "Sabine Fischer",
-      "role": "Incident Manager",
-      "department_id": "dept-002",
-      "email": "s.fischer@techcorp.ag",
-      "phone": "+49 89 1234-1203",
-      "reports_to": "emp-006",
-      "hire_date": "2021-07-15",
-      "avatar_initials": "SF"
-    },
-    {
-      "id": "emp-010",
-      "name": "Christian Braun",
-      "role": "Change Manager",
-      "department_id": "dept-002",
-      "email": "c.braun@techcorp.ag",
-      "phone": "+49 89 1234-1204",
-      "reports_to": "emp-006",
-      "hire_date": "2020-09-01",
-      "avatar_initials": "CB"
-    },
-    {
-      "id": "emp-011",
-      "name": "Dr. Julia Krause",
-      "role": "Leiterin IT Entwicklung",
-      "department_id": "dept-003",
-      "email": "j.krause@techcorp.ag",
-      "phone": "+49 89 1234-1300",
-      "reports_to": "emp-001",
-      "hire_date": "2020-03-01",
-      "avatar_initials": "JK"
-    },
-    {
-      "id": "emp-012",
-      "name": "Peter Lange",
-      "role": "Senior Software Engineer",
-      "department_id": "dept-003",
-      "email": "p.lange@techcorp.ag",
-      "phone": "+49 89 1234-1301",
-      "reports_to": "emp-011",
-      "hire_date": "2020-08-01",
-      "avatar_initials": "PL"
-    },
-    {
-      "id": "emp-013",
-      "name": "Nina Schmidt",
-      "role": "Frontend Entwicklerin",
-      "department_id": "dept-003",
-      "email": "n.schmidt@techcorp.ag",
-      "phone": "+49 89 1234-1302",
-      "reports_to": "emp-011",
-      "hire_date": "2022-10-01",
-      "avatar_initials": "NS"
-    },
-    {
-      "id": "emp-014",
-      "name": "David Keller",
-      "role": "DevOps Engineer",
-      "department_id": "dept-003",
-      "email": "d.keller@techcorp.ag",
-      "phone": "+49 89 1234-1303",
-      "reports_to": "emp-011",
-      "hire_date": "2021-11-15",
-      "avatar_initials": "DK"
-    },
-    {
-      "id": "emp-015",
-      "name": "Maria Wolf",
-      "role": "IT Security Analystin",
-      "department_id": "dept-003",
-      "email": "m.wolf@techcorp.ag",
-      "phone": "+49 89 1234-1304",
-      "reports_to": "emp-011",
-      "hire_date": "2023-01-15",
-      "avatar_initials": "MW"
-    }
+    { "id": "emp-head-001", "name": "Dr. Markus Bauer", "role": "ITOT Head", "site_id": null },
+    { "id": "emp-muc-001", "name": "Sandra Hoffmann", "role": "Site Lead Munich / Leiterin IT Infrastruktur", "site_id": "site-muc" },
+    { "id": "emp-muc-stab-001", "name": "Dr. Julia Krause", "role": "Strategische IT-Planung", "site_id": "site-muc" },
+    { "id": "emp-muc-stab-002", "name": "Christian Braun", "role": "IT Governance & Compliance", "site_id": "site-muc" },
+    { "id": "emp-muc-002", "name": "Jonas Müller", "role": "Senior Netzwerkadministrator", "site_id": "site-muc" },
+    { "id": "emp-muc-003", "name": "Lena Richter", "role": "Systemadministratorin", "site_id": "site-muc" },
+    { "id": "emp-muc-004", "name": "Tobias Klein", "role": "Cloud Engineer", "site_id": "site-muc" },
+    { "id": "emp-muc-005", "name": "Peter Lange", "role": "Cloud Architect", "site_id": "site-muc" },
+    { "id": "emp-muc-006", "name": "Michael Schneider", "role": "Leiter IT Service Management", "site_id": "site-muc" },
+    { "id": "emp-muc-007", "name": "Anna Weber", "role": "ITSM Consultant", "site_id": "site-muc" },
+    { "id": "emp-muc-008", "name": "Sabine Fischer", "role": "Incident Manager", "site_id": "site-muc" },
+    { "id": "emp-muc-009", "name": "Felix Wagner", "role": "IT Support Specialist", "site_id": "site-muc" },
+    { "id": "emp-muc-010", "name": "Nina Schmidt", "role": "Lead Software Engineer", "site_id": "site-muc" },
+    { "id": "emp-muc-011", "name": "David Keller", "role": "DevOps Engineer", "site_id": "site-muc" },
+    { "id": "emp-muc-012", "name": "Maria Wolf", "role": "Backend Entwicklerin", "site_id": "site-muc" },
+    { "id": "emp-nyc-001", "name": "James Carter", "role": "Site Lead New York / VP IT Americas", "site_id": "site-nyc" },
+    { "id": "emp-nyc-stab-001", "name": "Rachel Greene", "role": "IT Strategy & Transformation", "site_id": "site-nyc" },
+    { "id": "emp-nyc-002", "name": "Michael Torres", "role": "Head of IT Operations Americas", "site_id": "site-nyc" },
+    { "id": "emp-nyc-003", "name": "Ashley Johnson", "role": "Systems Engineer", "site_id": "site-nyc" },
+    { "id": "emp-nyc-004", "name": "Brandon Lee", "role": "Network Engineer", "site_id": "site-nyc" },
+    { "id": "emp-nyc-005", "name": "Samantha Davis", "role": "Cloud Solutions Architect", "site_id": "site-nyc" },
+    { "id": "emp-nyc-006", "name": "Kevin Walsh", "role": "Head of Cybersecurity", "site_id": "site-nyc" },
+    { "id": "emp-nyc-007", "name": "Diana Morgan", "role": "Security Analyst", "site_id": "site-nyc" },
+    { "id": "emp-nyc-008", "name": "Tyler Brooks", "role": "Penetration Tester", "site_id": "site-nyc" },
+    { "id": "emp-nyc-009", "name": "Megan Collins", "role": "SOC Analyst", "site_id": "site-nyc" },
+    { "id": "emp-nyc-010", "name": "Patricia Evans", "role": "IT Compliance Manager", "site_id": "site-nyc" },
+    { "id": "emp-nyc-011", "name": "Robert Kim", "role": "IT Auditor", "site_id": "site-nyc" },
+    { "id": "emp-nyc-012", "name": "Laura Chen", "role": "Risk & Compliance Analyst", "site_id": "site-nyc" },
+    { "id": "emp-lon-001", "name": "Victoria Clarke", "role": "Site Lead London / Head of IT EMEA", "site_id": "site-lon" },
+    { "id": "emp-lon-002", "name": "Oliver Bennett", "role": "Head of IT Infrastructure EMEA", "site_id": "site-lon" },
+    { "id": "emp-lon-003", "name": "Charlotte Hughes", "role": "Network Administrator", "site_id": "site-lon" },
+    { "id": "emp-lon-004", "name": "Harry Thompson", "role": "Systems Administrator", "site_id": "site-lon" },
+    { "id": "emp-lon-005", "name": "Emma Wilson", "role": "Service Desk Manager UK", "site_id": "site-lon" },
+    { "id": "emp-lon-006", "name": "Jack Robinson", "role": "IT Support Analyst", "site_id": "site-lon" },
+    { "id": "emp-lon-007", "name": "Sophie Martin", "role": "IT Support Analyst", "site_id": "site-lon" },
+    { "id": "emp-lon-008", "name": "George Harris", "role": "Senior IT Support Specialist", "site_id": "site-lon" },
+    { "id": "emp-lon-009", "name": "Amelia Scott", "role": "Application Manager", "site_id": "site-lon" },
+    { "id": "emp-lon-010", "name": "William Adams", "role": "SAP Consultant", "site_id": "site-lon" },
+    { "id": "emp-lon-011", "name": "Isla Campbell", "role": "Frontend Developer", "site_id": "site-lon" },
+    { "id": "emp-sin-001", "name": "Wei Liang Tan", "role": "Site Lead Singapore / Head of APAC IT", "site_id": "site-sin" },
+    { "id": "emp-sin-stab-001", "name": "Priya Nair", "role": "IT Vendor Management APAC", "site_id": "site-sin" },
+    { "id": "emp-sin-002", "name": "Chen Wei", "role": "Head of APAC IT Operations", "site_id": "site-sin" },
+    { "id": "emp-sin-003", "name": "Aditya Sharma", "role": "Cloud Infrastructure Engineer", "site_id": "site-sin" },
+    { "id": "emp-sin-004", "name": "Li Mei Ong", "role": "Network Engineer", "site_id": "site-sin" },
+    { "id": "emp-sin-005", "name": "Rajesh Kumar", "role": "Systems Administrator", "site_id": "site-sin" },
+    { "id": "emp-sin-006", "name": "Hui Lin Zhang", "role": "Service Desk Manager APAC", "site_id": "site-sin" },
+    { "id": "emp-sin-007", "name": "Kavya Reddy", "role": "IT Support Analyst", "site_id": "site-sin" },
+    { "id": "emp-sin-008", "name": "Boon Huat Lim", "role": "IT Support Specialist", "site_id": "site-sin" },
+    { "id": "emp-sin-009", "name": "Farhan Abdullah", "role": "Endpoint Management Lead", "site_id": "site-sin" },
+    { "id": "emp-sin-010", "name": "Mei Shan Goh", "role": "MDM Engineer", "site_id": "site-sin" },
+    { "id": "emp-sin-011", "name": "Suresh Pillai", "role": "Mobile Device Engineer", "site_id": "site-sin" },
+    { "id": "emp-gru-001", "name": "Rafael Oliveira", "role": "Site Lead São Paulo / Head of IT LATAM", "site_id": "site-gru" },
+    { "id": "emp-gru-002", "name": "Fernanda Costa", "role": "IT Infrastructure Lead LATAM", "site_id": "site-gru" },
+    { "id": "emp-gru-003", "name": "Carlos Mendes", "role": "Network Engineer", "site_id": "site-gru" },
+    { "id": "emp-gru-004", "name": "Ana Lima", "role": "Systems Administrator", "site_id": "site-gru" },
+    { "id": "emp-gru-005", "name": "Marcos Santos", "role": "Service Desk Manager Brasil", "site_id": "site-gru" },
+    { "id": "emp-gru-006", "name": "Juliana Ferreira", "role": "IT Support Analyst", "site_id": "site-gru" },
+    { "id": "emp-gru-007", "name": "Lucas Alves", "role": "IT Support Analyst", "site_id": "site-gru" },
+    { "id": "emp-tyo-001", "name": "Kenji Yamamoto", "role": "Site Lead Tokyo / Head of IT Japan", "site_id": "site-tyo" },
+    { "id": "emp-tyo-002", "name": "Hiroshi Tanaka", "role": "IT Operations Lead Japan", "site_id": "site-tyo" },
+    { "id": "emp-tyo-003", "name": "Yuki Suzuki", "role": "Network Engineer", "site_id": "site-tyo" },
+    { "id": "emp-tyo-004", "name": "Akira Watanabe", "role": "Systems Administrator", "site_id": "site-tyo" },
+    { "id": "emp-tyo-005", "name": "Naomi Sato", "role": "Cloud Engineer", "site_id": "site-tyo" },
+    { "id": "emp-tyo-006", "name": "Takeshi Ito", "role": "Service Desk Manager Japan", "site_id": "site-tyo" },
+    { "id": "emp-tyo-007", "name": "Mika Hayashi", "role": "IT Support Analyst", "site_id": "site-tyo" },
+    { "id": "emp-tyo-008", "name": "Ryo Nakamura", "role": "IT Support Analyst", "site_id": "site-tyo" },
+    { "id": "emp-dxb-001", "name": "Khalid Al-Rashid", "role": "Site Lead Dubai / Head of IT MEA", "site_id": "site-dxb" },
+    { "id": "emp-dxb-002", "name": "Ahmed Hassan", "role": "IT Infrastructure Lead MEA", "site_id": "site-dxb" },
+    { "id": "emp-dxb-003", "name": "Omar Farouq", "role": "Network Administrator", "site_id": "site-dxb" },
+    { "id": "emp-dxb-004", "name": "Fatima Al-Ali", "role": "Systems Engineer", "site_id": "site-dxb" },
+    { "id": "emp-dxb-005", "name": "Sara Ibrahim", "role": "Service Desk Manager MEA", "site_id": "site-dxb" },
+    { "id": "emp-dxb-006", "name": "Youssef Mansour", "role": "IT Support Analyst", "site_id": "site-dxb" },
+    { "id": "emp-dxb-007", "name": "Nadia Khalil", "role": "IT Support Analyst", "site_id": "site-dxb" },
+    { "id": "emp-syd-001", "name": "Sarah Mitchell", "role": "Site Lead Sydney / Head of IT APAC South", "site_id": "site-syd" },
+    { "id": "emp-syd-stab-001", "name": "Nathan Cooper", "role": "IT Business Partner APAC South", "site_id": "site-syd" },
+    { "id": "emp-syd-002", "name": "Liam O'Brien", "role": "IT Infrastructure Lead APAC South", "site_id": "site-syd" },
+    { "id": "emp-syd-003", "name": "Emily Nguyen", "role": "Cloud Engineer", "site_id": "site-syd" },
+    { "id": "emp-syd-004", "name": "Jake Harrison", "role": "Network Administrator", "site_id": "site-syd" },
+    { "id": "emp-syd-005", "name": "Chloe Anderson", "role": "Service Desk Manager Australia", "site_id": "site-syd" },
+    { "id": "emp-syd-006", "name": "Ryan Murphy", "role": "IT Support Analyst", "site_id": "site-syd" },
+    { "id": "emp-syd-007", "name": "Jessica White", "role": "IT Support Analyst", "site_id": "site-syd" },
+    { "id": "emp-jnb-001", "name": "Thabo Mokoena", "role": "Site Lead Johannesburg / Head of IT Africa", "site_id": "site-jnb" },
+    { "id": "emp-jnb-002", "name": "Sipho Dlamini", "role": "IT Operations Lead Africa", "site_id": "site-jnb" },
+    { "id": "emp-jnb-003", "name": "Nomsa Khumalo", "role": "Network Engineer", "site_id": "site-jnb" },
+    { "id": "emp-jnb-004", "name": "Andile Nkosi", "role": "Systems Administrator", "site_id": "site-jnb" },
+    { "id": "emp-jnb-005", "name": "Zanele Mthembu", "role": "Service Desk Manager Africa", "site_id": "site-jnb" },
+    { "id": "emp-jnb-006", "name": "Lebogang Sithole", "role": "IT Support Analyst", "site_id": "site-jnb" },
+    { "id": "emp-jnb-007", "name": "Precious Molefe", "role": "IT Support Analyst", "site_id": "site-jnb" }
   ]
 }
