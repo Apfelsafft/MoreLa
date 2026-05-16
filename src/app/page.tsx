@@ -2,12 +2,13 @@ import Link from "next/link";
 import { Users, FolderKanban, BarChart3, ArrowRight, MapPin } from "lucide-react";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
-import { getOrgData, getProjectsData, getFinancesData, formatCurrency } from "@/lib/data";
+import { getOrgData, getProjectsData, getFinancesData, getActivitiesData, formatCurrency } from "@/lib/data";
 
 export default async function DashboardPage() {
   const org = getOrgData();
   const projectsData = getProjectsData();
   const finances = getFinancesData();
+  const activitiesData = getActivitiesData();
 
   const activeProjects = projectsData.projects.filter((p) => p.status === "active").length;
   const planningProjects = projectsData.projects.filter((p) => p.status === "planning").length;
@@ -89,6 +90,36 @@ export default async function DashboardPage() {
   ];
 
   const top3Depts = finances.departments.slice(0, 3);
+
+  // Activities cost breakdown
+  const acts = activitiesData.activities;
+  const actTotal = acts.reduce(
+    (sum, a) =>
+      sum +
+      a.costs.licences +
+      a.costs.msp_service_contracts +
+      a.costs.internal_fte +
+      a.costs.external_fte +
+      a.costs.contractors,
+    0
+  );
+  const runTotal = acts
+    .filter((a) => a.cost_group === "RUN")
+    .reduce(
+      (sum, a) =>
+        sum +
+        a.costs.licences +
+        a.costs.msp_service_contracts +
+        a.costs.internal_fte +
+        a.costs.external_fte +
+        a.costs.contractors,
+      0
+    );
+  const investTotal = actTotal - runTotal;
+  const thirdPartyTotal = acts.reduce((s, a) => s + a.costs.licences + a.costs.msp_service_contracts, 0);
+  const labourTotal = acts.reduce((s, a) => s + a.costs.internal_fte + a.costs.external_fte + a.costs.contractors, 0);
+  const runPct = actTotal > 0 ? Math.round((runTotal / actTotal) * 100) : 0;
+  const thirdPartyPct = actTotal > 0 ? Math.round((thirdPartyTotal / actTotal) * 100) : 0;
 
   return (
     <div className="flex h-screen bg-gray-50">
@@ -243,6 +274,74 @@ export default async function DashboardPage() {
                     </div>
                   );
                 })}
+            </div>
+          </div>
+
+          {/* Cost Breakdown Widget */}
+          <div className="bg-white rounded-xl border border-gray-200 p-5">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <h2 className="text-sm font-semibold text-gray-900">Kostenaufschlüsselung (Activities)</h2>
+                <p className="text-xs text-gray-400 mt-0.5">
+                  Gesamt: {formatCurrency(actTotal)} · {acts.length} Activities
+                </p>
+              </div>
+              <Link
+                href="/finanzen"
+                className="text-xs text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1"
+              >
+                Details <ArrowRight className="w-3 h-3" />
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {/* RUN vs INVESTMENTS */}
+              <div>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Nach Kategorie</p>
+                <div className="space-y-2.5">
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="font-medium text-gray-700">RUN</span>
+                      <span className="text-xs text-gray-500">{runPct}% · {formatCurrency(runTotal)}</span>
+                    </div>
+                    <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div className="h-full bg-blue-500 rounded-full" style={{ width: `${runPct}%` }} />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="font-medium text-gray-700">INVESTMENTS</span>
+                      <span className="text-xs text-gray-500">{100 - runPct}% · {formatCurrency(investTotal)}</span>
+                    </div>
+                    <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div className="h-full bg-amber-500 rounded-full" style={{ width: `${100 - runPct}%` }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* 3rd Party vs LABOUR */}
+              <div>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Nach Kostentyp</p>
+                <div className="space-y-2.5">
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="font-medium text-gray-700">3rd Party</span>
+                      <span className="text-xs text-gray-500">{thirdPartyPct}% · {formatCurrency(thirdPartyTotal)}</span>
+                    </div>
+                    <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div className="h-full bg-indigo-500 rounded-full" style={{ width: `${thirdPartyPct}%` }} />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="font-medium text-gray-700">LABOUR</span>
+                      <span className="text-xs text-gray-500">{100 - thirdPartyPct}% · {formatCurrency(labourTotal)}</span>
+                    </div>
+                    <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div className="h-full bg-teal-500 rounded-full" style={{ width: `${100 - thirdPartyPct}%` }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </main>

@@ -144,6 +144,64 @@ export interface FinancesData {
   monthly_spend: MonthlySpend[];
 }
 
+// ── Activities interfaces ──────────────────────────────────────────────────────
+
+export interface Activity {
+  id: string;
+  name: string;
+  servicenow_apm_id: string;
+  cost_group: "RUN" | "INVESTMENTS";
+  cost_category: "RUN" | "NEW_RUN" | "CARRY_OVER" | "LTO" | "BC" | "TECH";
+  costs: {
+    licences: number;
+    msp_service_contracts: number;
+    internal_fte: number;
+    external_fte: number;
+    contractors: number;
+  };
+}
+
+export interface ActivitiesData {
+  updated: string;
+  activities: Activity[];
+}
+
+// ── Site Pages interfaces ──────────────────────────────────────────────────────
+
+export interface SitePageSystem {
+  name: string;
+  status: "active" | "in_migration" | "eol" | "planned";
+  note: string;
+}
+
+export interface SitePageProject {
+  name: string;
+  status: "active" | "planning" | "completed" | "on-hold";
+  lead: string;
+}
+
+export interface SitePageRoadmapEntry {
+  quarter: string;
+  items: string[];
+}
+
+export interface SitePage {
+  id: string;
+  name: string;
+  country: string;
+  flag: string;
+  beschreibung_itot: string;
+  in_scope: string[];
+  roadmap: SitePageRoadmapEntry[];
+  systeme_in_fokus: SitePageSystem[];
+  projekte_in_scope: SitePageProject[];
+}
+
+export interface SitePagesData {
+  updated: string;
+  site_pages: SitePage[];
+}
+
 // ── Utility functions ──────────────────────────────────────────────────────────
 
 export function formatCurrency(amount: number): string {

@@ -1,0 +1,313 @@
+{
+  "updated": "2026-05-16",
+  "activities": [
+    {
+      "id": "act-001",
+      "name": "Microsoft 365 Lizenzierung",
+      "servicenow_apm_id": "APM0001001",
+      "cost_group": "RUN",
+      "cost_category": "RUN",
+      "costs": {
+        "licences": 200000,
+        "msp_service_contracts": 0,
+        "internal_fte": 15000,
+        "external_fte": 0,
+        "contractors": 0
+      }
+    },
+    {
+      "id": "act-002",
+      "name": "SAP ERP Betrieb",
+      "servicenow_apm_id": "APM0001002",
+      "cost_group": "RUN",
+      "cost_category": "RUN",
+      "costs": {
+        "licences": 160000,
+        "msp_service_contracts": 80000,
+        "internal_fte": 100000,
+        "external_fte": 50000,
+        "contractors": 0
+      }
+    },
+    {
+      "id": "act-003",
+      "name": "ServiceNow Plattformbetrieb",
+      "servicenow_apm_id": "APM0001003",
+      "cost_group": "RUN",
+      "cost_category": "RUN",
+      "costs": {
+        "licences": 145000,
+        "msp_service_contracts": 30000,
+        "internal_fte": 85000,
+        "external_fte": 0,
+        "contractors": 20000
+      }
+    },
+    {
+      "id": "act-004",
+      "name": "Netzwerkinfrastruktur Wartung",
+      "servicenow_apm_id": "APM0001004",
+      "cost_group": "RUN",
+      "cost_category": "RUN",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 120000,
+        "internal_fte": 90000,
+        "external_fte": 40000,
+        "contractors": 0
+      }
+    },
+    {
+      "id": "act-005",
+      "name": "IT Security Operations",
+      "servicenow_apm_id": "APM0001005",
+      "cost_group": "RUN",
+      "cost_category": "RUN",
+      "costs": {
+        "licences": 85000,
+        "msp_service_contracts": 55000,
+        "internal_fte": 110000,
+        "external_fte": 30000,
+        "contractors": 0
+      }
+    },
+    {
+      "id": "act-006",
+      "name": "Workplace Services & Endgerätemanagement",
+      "servicenow_apm_id": "APM0001006",
+      "cost_group": "RUN",
+      "cost_category": "RUN",
+      "costs": {
+        "licences": 60000,
+        "msp_service_contracts": 75000,
+        "internal_fte": 95000,
+        "external_fte": 0,
+        "contractors": 15000
+      }
+    },
+    {
+      "id": "act-007",
+      "name": "Datacenter Hosting & Housing",
+      "servicenow_apm_id": "APM0001007",
+      "cost_group": "RUN",
+      "cost_category": "RUN",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 210000,
+        "internal_fte": 45000,
+        "external_fte": 0,
+        "contractors": 0
+      }
+    },
+    {
+      "id": "act-008",
+      "name": "IT Service Desk Operations",
+      "servicenow_apm_id": "APM0001008",
+      "cost_group": "RUN",
+      "cost_category": "RUN",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 90000,
+        "internal_fte": 130000,
+        "external_fte": 50000,
+        "contractors": 0
+      }
+    },
+    {
+      "id": "act-009",
+      "name": "CRM Salesforce Lizenzierung & Betrieb",
+      "servicenow_apm_id": "APM0001009",
+      "cost_group": "RUN",
+      "cost_category": "NEW_RUN",
+      "costs": {
+        "licences": 155000,
+        "msp_service_contracts": 20000,
+        "internal_fte": 40000,
+        "external_fte": 35000,
+        "contractors": 0
+      }
+    },
+    {
+      "id": "act-010",
+      "name": "Azure Cloud Plattform Betrieb",
+      "servicenow_apm_id": "APM0001010",
+      "cost_group": "RUN",
+      "cost_category": "NEW_RUN",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 130000,
+        "internal_fte": 70000,
+        "external_fte": 45000,
+        "contractors": 0
+      }
+    },
+    {
+      "id": "act-011",
+      "name": "Power BI & Analytics Plattform",
+      "servicenow_apm_id": "APM0001011",
+      "cost_group": "RUN",
+      "cost_category": "NEW_RUN",
+      "costs": {
+        "licences": 48000,
+        "msp_service_contracts": 0,
+        "internal_fte": 55000,
+        "external_fte": 20000,
+        "contractors": 0
+      }
+    },
+    {
+      "id": "act-012",
+      "name": "SAP S/4HANA Migration",
+      "servicenow_apm_id": "APM0002001",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "CARRY_OVER",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 85000,
+        "internal_fte": 60000,
+        "external_fte": 180000,
+        "contractors": 95000
+      }
+    },
+    {
+      "id": "act-013",
+      "name": "ERP Legacy Ablösung Phase 2",
+      "servicenow_apm_id": "APM0002002",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "CARRY_OVER",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 40000,
+        "internal_fte": 55000,
+        "external_fte": 120000,
+        "contractors": 70000
+      }
+    },
+    {
+      "id": "act-014",
+      "name": "Zero Trust Network Access Implementierung",
+      "servicenow_apm_id": "APM0002003",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "LTO",
+      "costs": {
+        "licences": 75000,
+        "msp_service_contracts": 30000,
+        "internal_fte": 50000,
+        "external_fte": 65000,
+        "contractors": 40000
+      }
+    },
+    {
+      "id": "act-015",
+      "name": "Cyber Security Compliance & Audit",
+      "servicenow_apm_id": "APM0002004",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "LTO",
+      "costs": {
+        "licences": 35000,
+        "msp_service_contracts": 45000,
+        "internal_fte": 80000,
+        "external_fte": 30000,
+        "contractors": 25000
+      }
+    },
+    {
+      "id": "act-016",
+      "name": "NIS2 Regulatorik Umsetzung",
+      "servicenow_apm_id": "APM0002005",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "LTO",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 25000,
+        "internal_fte": 45000,
+        "external_fte": 55000,
+        "contractors": 30000
+      }
+    },
+    {
+      "id": "act-017",
+      "name": "Customer Portal Modernisierung",
+      "servicenow_apm_id": "APM0002006",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "BC",
+      "costs": {
+        "licences": 20000,
+        "msp_service_contracts": 0,
+        "internal_fte": 70000,
+        "external_fte": 110000,
+        "contractors": 55000
+      }
+    },
+    {
+      "id": "act-018",
+      "name": "Self-Service HR Portal",
+      "servicenow_apm_id": "APM0002007",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "BC",
+      "costs": {
+        "licences": 28000,
+        "msp_service_contracts": 0,
+        "internal_fte": 40000,
+        "external_fte": 65000,
+        "contractors": 30000
+      }
+    },
+    {
+      "id": "act-019",
+      "name": "Cloud Migration Azure Landing Zone",
+      "servicenow_apm_id": "APM0002008",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "TECH",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 60000,
+        "internal_fte": 55000,
+        "external_fte": 90000,
+        "contractors": 70000
+      }
+    },
+    {
+      "id": "act-020",
+      "name": "Server Refresh & Hardware Modernisierung",
+      "servicenow_apm_id": "APM0002009",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "TECH",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 45000,
+        "internal_fte": 30000,
+        "external_fte": 0,
+        "contractors": 85000
+      }
+    },
+    {
+      "id": "act-021",
+      "name": "Netzwerk Backbone Upgrade (SD-WAN)",
+      "servicenow_apm_id": "APM0002010",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "TECH",
+      "costs": {
+        "licences": 0,
+        "msp_service_contracts": 55000,
+        "internal_fte": 35000,
+        "external_fte": 50000,
+        "contractors": 60000
+      }
+    },
+    {
+      "id": "act-022",
+      "name": "Backup & Disaster Recovery Modernisierung",
+      "servicenow_apm_id": "APM0002011",
+      "cost_group": "INVESTMENTS",
+      "cost_category": "TECH",
+      "costs": {
+        "licences": 40000,
+        "msp_service_contracts": 35000,
+        "internal_fte": 25000,
+        "external_fte": 30000,
+        "contractors": 20000
+      }
+    }
+  ]
+}

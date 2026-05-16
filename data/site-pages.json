@@ -1,0 +1,55 @@
+{
+  "updated": "2026-05-16",
+  "site_pages": [
+    {
+      "id": "phl",
+      "name": "Philadelphia",
+      "country": "USA",
+      "flag": "🇺🇸",
+      "beschreibung_itot": "Das ITOT-Team Philadelphia unterstützt die amerikanische Ostküstenregion mit rund 450 Mitarbeitern. Schwerpunkte liegen im Bereich SAP-Betrieb, lokale Infrastruktur sowie die Integration mit den globalen Plattformen des Konzerns.",
+      "in_scope": [
+        "SAP ERP (FI/CO, MM, SD)",
+        "Microsoft 365 & Teams",
+        "Lokale Netzwerkinfrastruktur",
+        "Workplace Services (End-User Computing)",
+        "IT Security & Compliance (lokale Maßnahmen)",
+        "ServiceNow (Ticketing & Asset Management)"
+      ],
+      "roadmap": [
+        {
+          "quarter": "Q2 2026",
+          "items": [
+            "Migration Legacy-Fileserver auf SharePoint Online",
+            "Rollout MFA für alle Benutzerkonten"
+          ]
+        },
+        {
+          "quarter": "Q3 2026",
+          "items": [
+            "SAP S/4HANA Upgrade Vorbereitung",
+            "Zero Trust Network Access Pilotprojekt"
+          ]
+        },
+        {
+          "quarter": "Q4 2026",
+          "items": [
+            "Azure Landing Zone Erweiterung",
+            "IT Service Catalog Erneuerung"
+          ]
+        }
+      ],
+      "systeme_in_fokus": [
+        { "name": "SAP ERP 6.0", "status": "in_migration", "note": "Migration auf S/4HANA geplant Q1 2027" },
+        { "name": "ServiceNow (San Diego)", "status": "active", "note": "Upgrade auf Utah in Q3 2026" },
+        { "name": "Microsoft 365 E3", "status": "active", "note": "Copilot Pilotprojekt läuft" },
+        { "name": "Cisco Catalyst Switching", "status": "active", "note": "EOL-Planung läuft" },
+        { "name": "VMware vSphere 7.0", "status": "in_migration", "note": "Cloud-First Strategie" }
+      ],
+      "projekte_in_scope": [
+        { "name": "SAP S/4HANA Migration", "status": "planning", "lead": "James Miller" },
+        { "name": "Zero Trust Security", "status": "active", "lead": "Sarah Chen" },
+        { "name": "Azure Cloud Migration", "status": "active", "lead": "Tom Rodriguez" }
+      ]
+    }
+  ]
+}

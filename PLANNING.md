@@ -57,13 +57,14 @@ Dieses Dokument dient als gemeinsame Arbeitsgrundlage. Trage deine Wünsche und 
 - ✅ Abteilungs-Budget-Tabelle
 - ✅ Kostenkategorien mit Balkendiagramm
 - ✅ Monatliches Ausgaben-Diagramm (Ist vs. Prognose)
+- ✅ Activities-Datenmodell mit ServiceNow APM-ID
+- ✅ Kostengruppen RUN / INVESTMENTS mit Unterkategorien (RUN, NEW_RUN, CARRY_OVER, LTO, BC, TECH)
+- ✅ Kostentypen 3rd Party (Licences, MSP/Service Contracts) und LABOUR (Internal FTE, External FTE, Contractors)
+- ✅ Toggle-Ansicht "Nach Kategorie" / "Nach Kostentyp" auf der Finanzenseite
+- ✅ Collapsible Activity-Tabelle mit APM-ID, Kategorie und allen Kostenspalten (sortiert nach Gesamtkosten)
+- ✅ 22 realistische Dummy-Activities (~4,6 Mio. EUR Gesamtvolumen)
 
 ### Offen — Deine Wünsche hier eintragen
-- Alle ACTIVITIES sind verschiedenen Kostenkategorien zugeordnet.
-- Die Kostenkatogiren sind wie folgt aufgeteilt. Im Groben gibt es RUN und INVESTMENTS. RUN beinhaltet die Services des daily business und sind unterteilt in RUN und NEW RUN. NEW RUN ist das Ergebnis eines Investments was erstmalig zu einem RUN wird.
-- INVESTMENTS sind kategoriert in CARRY OVER (ein Investment welches aus dem letzten Jahr weitergeführt wird), LTO (licence to operate - muss aus regulatorischen oder ähnlich wichtigen Gründen umgesetzt werden bspw CyberSecurity), BC (Business Capability - wird zu verbesserung der Business Capabilities umgesetzt) und Tech (Technology driven - Verbesserung aus technologischen Gründen, neue Systeme oder Hardware)
-- alle ACTIVITIES haben verschiedene Kosten Typen. Das sind 3rd Party Kosten (LICENCES und MSPs/ Service Contracts) sowie LABOUR (Interne FTE, Externe FTE und Contractors). Die Summe der Kosten Typen ergibt die Gesamtkosten einer ACTIVITY
-- Als entsprechendes System wird ServiceNow verwendet. Aktuell bitte Dummy Daten verwenden aber zukünftig wird ServiceNow direkt angebunden oder über einen gSheet / Excel importiert. Bitte eine ServiceNow APM ID für jede Activity vorsehen
 
 ---
 
@@ -87,16 +88,20 @@ Dieses Dokument dient als gemeinsame Arbeitsgrundlage. Trage deine Wünsche und 
 - ✅ Budget-Übersicht pro Abteilung
 - ✅ Schnellzugriff auf alle Bereiche
 - ✅ Aktive Projekte (Übersicht)
+- ✅ Kostenaufschlüsselung-Widget: RUN vs. INVESTMENTS und 3rd Party vs. LABOUR (mit Prozent-Splits und Balken)
 
 ### Offen — Deine Wünsche hier eintragen
-- Aufschlüsselbar nach Kosten Kategorie und Kosten Typ. 
 
 ---
 
 ## 6. Neue Datenbereiche
 
 ### Umgesetzt
-*(noch keine neuen Bereiche)*
+- ✅ Site Pages Datenmodell (data/site-pages.json)
+- ✅ Standorte-Übersichtsseite (/standorte) mit Kacheln pro Standort
+- ✅ Standort-Detailseite (/standorte/[id]) mit 5 Sektionen: Beschreibung ITOT, In Scope, Roadmap, Systeme in Fokus, Projekte in Scope
+- ✅ Dummy-Seite für Standort "Philadelphia" (USA)
+- ✅ Sidebar-Link "Standorte" mit Globe-Icon
 
 ### Offen — Deine Wünsche hier eintragen
 <!-- Mögliche Ideen:
@@ -105,10 +110,6 @@ Dieses Dokument dient als gemeinsame Arbeitsgrundlage. Trage deine Wünsche und 
 - 💡 Risikomanagement
 - 💡 Vendor Management
 -->
-- Bitte siehe für jede Site einen eigenen Bereich vor in dem eine Site verschiedene Informationen über sich teilen kann.
-- Dies können die aktuellen Produkte, Services und Projekte sein.
-- Bitte lege als Dummy eine Seite für eine Site "Philadelphia" an.
-- hier werden die Bereiche "Beschreibung ITOT", "In Scope", "Roadmap", "Systeme in Fokus", "Projekte in Scope" als Start benötigt.
 
 ---
 

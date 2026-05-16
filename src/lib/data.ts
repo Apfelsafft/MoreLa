@@ -16,9 +16,16 @@ export type {
   FinanceCategory,
   MonthlySpend,
   FinancesData,
+  Activity,
+  ActivitiesData,
+  SitePageSystem,
+  SitePageProject,
+  SitePageRoadmapEntry,
+  SitePage,
+  SitePagesData,
 } from "./types";
 export { formatCurrency, formatCurrencyFull } from "./types";
-import type { OrgData, ProjectsData, FinancesData } from "./types";
+import type { OrgData, ProjectsData, FinancesData, ActivitiesData, SitePagesData } from "./types";
 
 export function getOrgData(): OrgData {
   const raw = readFileSync(join(process.cwd(), "data/org.json"), "utf8");
@@ -33,4 +40,14 @@ export function getProjectsData(): ProjectsData {
 export function getFinancesData(): FinancesData {
   const raw = readFileSync(join(process.cwd(), "data/finances.json"), "utf8");
   return JSON.parse(raw) as FinancesData;
+}
+
+export function getActivitiesData(): ActivitiesData {
+  const raw = readFileSync(join(process.cwd(), "data/activities.json"), "utf8");
+  return JSON.parse(raw) as ActivitiesData;
+}
+
+export function getSitePagesData(): SitePagesData {
+  const raw = readFileSync(join(process.cwd(), "data/site-pages.json"), "utf8");
+  return JSON.parse(raw) as SitePagesData;
 }

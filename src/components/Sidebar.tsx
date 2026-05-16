@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, Users, FolderKanban, BarChart3, Shield, MessageCircle } from "lucide-react";
+import { LayoutDashboard, Users, FolderKanban, BarChart3, Shield, MessageCircle, Globe } from "lucide-react";
 import clsx from "clsx";
 
 const navItems = [
@@ -10,6 +10,7 @@ const navItems = [
   { href: "/org", label: "Organigramm", icon: Users },
   { href: "/projekte", label: "Projekte", icon: FolderKanban },
   { href: "/finanzen", label: "Finanzen", icon: BarChart3 },
+  { href: "/standorte", label: "Standorte", icon: Globe },
 ];
 
 interface SidebarProps {
